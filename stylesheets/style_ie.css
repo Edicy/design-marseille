@@ -1,0 +1,12 @@
+body, #logo, #header h2 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.menu li {
+    display: inline
+}
+#nav li a:hover {
+    padding-left: 0
+}
+#nav li a {
+    position: static
+}
