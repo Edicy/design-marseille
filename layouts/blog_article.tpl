@@ -29,6 +29,23 @@
        {{article.comments_count}}</span></a>{% endunless %}</p>
                                 <div class="excerpt">{% editable article.excerpt %}</div>
                                 {% editable article.body %}
+                                
+                                {% if editmode %}
+                                    <div class="cfx article-tags">
+                                        <div class="article-tag-icon"></div>
+                                        {% editable article.tags %}
+                                    </div>
+                                  {% else %}
+                                    {% unless article.tags == empty %}
+                                        <div class="cfx article-tags">
+                                            <div class="article-tag-icon"></div>
+                                            {% for tag in article.tags %}
+                                                <a href="{{ article.page.url }}/tagged/{{ tag.path }}">{{ tag.name }}</a>{% unless forloop.last %}, {% endunless %}
+                                            {% endfor %}
+                                        </div>
+                                    {% endunless %}
+                                {% endif %}
+                                
                             </div>
                             {% unless article.comments_count == 0 %}
                             <div id="comments">
@@ -36,7 +53,7 @@
                                 <ul>{% for comment in article.comments %}
                                     <li class="edy-site-blog-comment">
                                         <p><span class="comment-author">{{comment.author}}</span> <span class="comment-date">{{comment.created_at | format_date:"short"}}</span> {% removebutton %}</p>
-                                        {{comment.body}}
+                                        {{comment.body_html}}
                                     </li>{% endfor %}
                                 </ul>
                             </div>
