@@ -642,6 +642,4 @@ img {
 .edys-search-container-close {
   background: url("../images/site-search-closebtn.png") no-repeat right center;
 }
-input {
-	-webkit-appearance: none;
-}
+input[type="text"], button { -webkit-appearance: none; }
