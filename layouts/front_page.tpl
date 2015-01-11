@@ -19,7 +19,7 @@
 			        </div>
 			        <!-- //header -->	
 			        <div id="content-wrap">
-				        <div class="content clear">
+				        <div class="content clear" data-search-indexing-allowed="true">
 					        {% content %}
 				        </div>
 				        <!-- //content -->
