@@ -1,185 +1,185 @@
 {
+  "description": "Marseille",
+  "name": "Marseille",
   "preview_medium": "http://static.edicy.com/designs/previews/marseille_medium.jpg",
+  "preview_small": "http://static.edicy.com/designs/previews/marseille_small.jpg",
+  "author": "Paavel Liik",
   "layouts": [
     {
-      "file": "layouts/front_page.tpl",
+      "content_type": "page",
       "component": false,
-      "layout_name": "page_front",
-      "title": "Front page",
-      "content_type": "page"
-    },
-    {
       "file": "layouts/common_page.tpl",
-      "component": false,
       "layout_name": "page_default",
-      "title": "Common page",
-      "content_type": "page"
+      "title": "Common page"
     },
     {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/front_page.tpl",
+      "layout_name": "page_front",
+      "title": "Front page"
+    },
+    {
+      "content_type": "blog",
+      "component": false,
       "file": "layouts/blog___news.tpl",
-      "component": false,
       "layout_name": "blog",
-      "title": "Blog & News",
-      "content_type": "blog"
+      "title": "Blog & News"
     },
     {
-      "file": "layouts/blog_article.tpl",
+      "content_type": "blog_article",
       "component": false,
+      "file": "layouts/blog_article.tpl",
       "layout_name": "blog_article",
-      "title": "Blog article",
-      "content_type": "blog_article"
+      "title": "Blog article"
     },
     {
-      "file": "components/footer.tpl",
+      "content_type": "component",
       "component": true,
-      "layout_name": "footer",
-      "title": "Footer",
-      "content_type": "component"
-    },
-    {
-      "file": "components/js.tpl",
-      "component": true,
-      "layout_name": "JS",
-      "title": "JS",
-      "content_type": "component"
-    },
-    {
       "file": "components/langmenu.tpl",
-      "component": true,
       "layout_name": "langmenu",
-      "title": "Langmenu",
-      "content_type": "component"
+      "title": "langmenu"
     },
     {
+      "content_type": "component",
+      "component": true,
+      "file": "components/js.tpl",
+      "layout_name": "js",
+      "title": "js"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/footer.tpl",
+      "layout_name": "footer",
+      "title": "footer"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/mainmenu.tpl",
-      "component": true,
       "layout_name": "mainmenu",
-      "title": "Mainmenu",
-      "content_type": "component"
+      "title": "mainmenu"
     },
     {
-      "file": "components/search.tpl",
+      "content_type": "component",
       "component": true,
-      "layout_name": "search",
-      "title": "Search",
-      "content_type": "component"
-    },
-    {
-      "file": "components/siteheader.tpl",
-      "component": true,
-      "layout_name": "siteheader",
-      "title": "SiteHeader",
-      "content_type": "component"
-    },
-    {
-      "file": "components/submenu.tpl",
-      "component": true,
-      "layout_name": "submenu",
-      "title": "Submenu",
-      "content_type": "component"
-    },
-    {
       "file": "components/news.tpl",
-      "component": true,
       "layout_name": "news",
-      "title": "News",
-      "content_type": "component"
+      "title": "news"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/search.tpl",
+      "layout_name": "search",
+      "title": "search"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/siteheader.tpl",
+      "layout_name": "siteheader",
+      "title": "siteheader"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/submenu.tpl",
+      "layout_name": "submenu",
+      "title": "submenu"
     }
   ],
-  "description": "Marseille",
-  "preview_small": "http://static.edicy.com/designs/previews/marseille_small.jpg",
   "assets": [
     {
-      "file": "images/menu-active.png",
-      "kind": "images",
-      "filename": "menu-active.png",
-      "content_type": "image/png"
+      "content_type": "image/svg+xml",
+      "file": "assets/header-tag.svg",
+      "kind": "assets",
+      "filename": "header-tag.svg"
     },
     {
-      "file": "images/loop.png",
-      "kind": "images",
-      "filename": "loop.png",
-      "content_type": "image/png"
+      "content_type": "image/svg+xml",
+      "file": "assets/tag.svg",
+      "kind": "assets",
+      "filename": "tag.svg"
     },
     {
-      "file": "images/date-bg.png",
-      "kind": "images",
-      "filename": "date-bg.png",
-      "content_type": "image/png"
-    },
-    {
+      "content_type": "image/png",
       "file": "images/bg01.png",
       "kind": "images",
-      "filename": "bg01.png",
-      "content_type": "image/png"
+      "filename": "bg01.png"
     },
     {
-      "file": "images/lang-arr.png",
+      "content_type": "image/png",
+      "file": "images/date-bg.png",
       "kind": "images",
-      "filename": "lang-arr.png",
-      "content_type": "image/png"
+      "filename": "date-bg.png"
     },
     {
-      "file": "stylesheets/reset.css",
-      "kind": "stylesheets",
-      "filename": "reset.css",
-      "content_type": "text/css"
-    },
-    {
-      "file": "stylesheets/style.css",
-      "kind": "stylesheets",
-      "filename": "style.css",
-      "content_type": "text/css"
-    },
-    {
-      "file": "stylesheets/fonts.css",
-      "kind": "stylesheets",
-      "filename": "fonts.css",
-      "content_type": "text/css"
-    },
-    {
-      "file": "images/site-search-closebtn.png",
-      "kind": "images",
-      "filename": "site-search-closebtn.png",
-      "content_type": "image/png"
-    },
-    {
-      "file": "stylesheets/style_ie.css",
-      "kind": "stylesheets",
-      "filename": "style_ie.css",
-      "content_type": "text/css"
-    },
-    {
-      "file": "images/header-tag.svg",
-      "kind": "images",
-      "filename": "header-tag.svg",
-      "content_type": "image/svg+xml"
-    },
-    {
+      "content_type": "image/png",
       "file": "images/header-tag.png",
       "kind": "images",
-      "filename": "header-tag.png",
-      "content_type": "image/png"
+      "filename": "header-tag.png"
     },
     {
-      "file": "images/tag.svg",
+      "content_type": "image/png",
+      "file": "images/lang-arr.png",
       "kind": "images",
-      "filename": "tag.svg",
-      "content_type": "image/svg+xml"
+      "filename": "lang-arr.png"
     },
     {
+      "content_type": "image/png",
+      "file": "images/loop.png",
+      "kind": "images",
+      "filename": "loop.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/menu-active.png",
+      "kind": "images",
+      "filename": "menu-active.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/site-search-closebtn.png",
+      "kind": "images",
+      "filename": "site-search-closebtn.png"
+    },
+    {
+      "content_type": "image/png",
       "file": "images/tag.png",
       "kind": "images",
-      "filename": "tag.png",
-      "content_type": "image/png"
+      "filename": "tag.png"
     },
     {
+      "content_type": "application/javascript",
       "file": "javascripts/modernizr.js",
       "kind": "javascripts",
-      "filename": "modernizr.js",
-      "content_type": "text/javascript"
+      "filename": "modernizr.js"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/fonts.css",
+      "kind": "stylesheets",
+      "filename": "fonts.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/reset.css",
+      "kind": "stylesheets",
+      "filename": "reset.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/style.css",
+      "kind": "stylesheets",
+      "filename": "style.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/style_ie.css",
+      "kind": "stylesheets",
+      "filename": "style_ie.css"
     }
-  ],
-  "name": "Marseille",
-  "author": "Paavel Liik"
+  ]
 }
